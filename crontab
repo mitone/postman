@@ -1,0 +1,4 @@
+0 * * * *  /app/check_parcels.py >> /tmp/parcels.log 2>&1
+*/10 * * * *  /app/check_senders.py >> /tmp/parcels.log 2>&1
+0 18 * * *  /app/check_travels.py >> /tmp/travels.log 2>&1
+0 0 1 * *  /app/remind_once_month.py >> /tmp/parcels.log 2>&1
