@@ -1,0 +1,8 @@
+docker-compose rm postgres
+
+systemctl stop docker
+systemctl stop docker.socket
+
+docker-compose up
+
+psql -h 0.0.0.0 postgres postgres
